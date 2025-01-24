@@ -1,14 +1,14 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
-import CustomSelect from "./CustomSelect";
-import { menuData } from "./menuData";
-import Dropdown from "./Dropdown";
-import { useAppSelector } from "@/redux/store";
-import { useSelector } from "react-redux";
-import { selectTotalPrice } from "@/redux/features/cart-slice";
 import { useCartModalContext } from "@/app/context/CartSidebarModalContext";
+import { selectTotalPrice } from "@/redux/features/cart-slice";
+import { useAppSelector } from "@/redux/store";
 import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import CustomSelect from "./CustomSelect";
+import Dropdown from "./Dropdown";
+import { menuData } from "./menuData";
 
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -148,7 +148,7 @@ const Header = () => {
                   24/7 SUPPORT
                 </span>
                 <p className="font-medium text-custom-sm text-dark">
-                  (+965) 7492-3477
+                  (+20) 1122636253
                 </p>
               </div>
             </div>
